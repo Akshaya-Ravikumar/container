@@ -5,6 +5,29 @@ module.exports = {
     devServer: {
         port: '8080'
     },
+    module: {
+        rules : [
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                          ['@babel/preset-react', { targets: "defaults" }]
+                        ]
+                    }
+                }
+            },
+            {
+                test: /\.(css)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'css-loader'
+                }
+            }
+        ]
+    },
     plugins: [
         new moduleFederationPlugin({
             name: 'container',

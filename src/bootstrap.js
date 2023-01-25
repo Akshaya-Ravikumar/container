@@ -1,7 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
 
-import('mfe1/Mfe1Index');
-import('mfe2/Mfe2Index');
-
-
-console.log('container')
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <App />
+);
