@@ -1,6 +1,10 @@
 import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import('mfe1/Mfe1Index')
+
+//import('mfe2/Mfe2Index')
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(<div> <App /></div>);
+
+import('mfe1/Mfe1Index')
