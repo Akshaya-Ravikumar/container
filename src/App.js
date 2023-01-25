@@ -11,8 +11,6 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
           <ReactMFE2 />
       </Suspense>
-      
-
     </div>
   );
 }
